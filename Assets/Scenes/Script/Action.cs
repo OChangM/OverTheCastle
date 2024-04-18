@@ -25,6 +25,7 @@ public class Controller : MonoBehaviour
     bool CanMoving =false;
     bool isJumping; // 점프 유무 변수 선언
     bool Death; //사망처리(조작금지를 위해)
+    public string SceneToLoad;
 
 
 //dddddddddddddddddddddddddddddddd
@@ -86,7 +87,7 @@ public class Controller : MonoBehaviour
             leftPressed = false;
             rightPressed = false;
             Mov.SetTrigger("Attack1");
-            SPEED_MOVE = 0.0F;
+            SPEED_MOVE = 0.0F; //공격시 이동 중지
          }
          SPEED_MOVE = 3.0F;
         
